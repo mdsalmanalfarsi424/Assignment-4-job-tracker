@@ -19,9 +19,39 @@
      <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Job Application Tracker</title>
-    
+    <style>
+        *{
+             font-family: "Geist", sans-serif;
+        };
+    </style>
 </head>
 <body>
+
     
+<section id="app" class="p-8 bg-slate-50 min-h-screen font-sans">
+    <div class="max-w-4xl mx-auto">
+    <!-- available job count  -->
+    <h1 class="text-[32px] font-bold text-[#002C5C] mb-8">Job Application Tracker</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+        <p class="text-slate-500 font-medium mb-2">Total</p>
+        <h2 id="stat-total" class="text-3xl font-bold text-[#002C5C]">8</h2>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+        <p class="text-slate-500 font-medium mb-2 ">Interview</p>
+        <h2 id="stat-interview" class="text-3xl font-bold text-emerald-500">0</h2>
+      </div>
+      <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+        <p class="text-slate-500 font-medium mb-2">Rejected</p>
+        <h2 id="stat-rejected" class="text-3xl font-bold text-red-500">0</h2>
+      </div>
+    </div>
+    
+
+
+
+    </div>
+    </section>
 </body>
 </html>
