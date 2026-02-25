@@ -47,8 +47,37 @@
         <h2 id="stat-rejected" class="text-3xl font-bold text-red-500">0</h2>
       </div>
     </div>
-    
 
+    
+    <!-- availavle jobs section -->
+
+    <section>
+    <div class="border border-[#E6E7E9]"></div>
+    <div class="flex justify-between items-end mb-6 pt-6 ">
+      <h2 class="text-2xl font-bold text-[#002C5C] ">Available Jobs</h2>
+      <span id="job-count-text" class="text-slate-400 text-sm">8 jobs</span>
+    </div>
+
+    
+    
+        <div class="flex gap-3 mb-8" id="filter-container">
+      <button onclick="filterJobs('all', this)" 
+        class="filter-btn btn btn-sm h-10 px-6 normal-case rounded-md transition-all duration-200 
+               bg-[#3B82F6] text-white border-[#3B82F6] hover:bg-[#3B82F6] hover:text-white">
+        All
+      </button>
+      <button onclick="filterJobs('interview', this)" 
+        class="filter-btn btn btn-sm h-10 px-6 normal-case rounded-md transition-all duration-200 
+               bg-white text-slate-500 border-slate-200 hover:bg-[#3B82F6] hover:text-white hover:border-[#3B82F6]">
+        Interview
+      </button>
+      <button onclick="filterJobs('rejected', this)" 
+        class="filter-btn btn btn-sm h-10 px-6 normal-case rounded-md transition-all duration-200 
+               bg-white text-slate-500 border-slate-200 hover:bg-[#3B82F6] hover:text-white hover:border-[#3B82F6]">
+        Rejected
+      </button>
+    </div>
+    </section>
 
 
     </div>
